@@ -1,0 +1,7 @@
+.table-image td, .table-image th {
+    vertical-align: middle;
+}
+
+.table-image img {
+  width: 200px;
+}

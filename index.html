@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <link rel="stylesheet" href="./style.css">
+  <title>Music Project</title>
+</head>
+<body class="bg-dark">
+  <div class="container">
+    <div class="card row" style="margin-top: 30px;">
+      <div class="card-header">Music Project</div>
+      <div class="card-body">
+        <form id="music-form">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="text" id="title" class="form-control" placeholder="Title">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" id="artist" class="form-control" placeholder="Artist">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" id="album" class="form-control" placeholder="Album">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="text" id="cover" class="form-control" placeholder="Cover Address">
+            </div>
+          </div>
+          <button type="submit" class="btn btn-dark btn-block">Add Music</button>
+        </form>
+        <hr>
+      </div>
+
+      <div class="card-body">
+        <hr>
+
+        <h5 class="card-title text-center" id="music-title">Musics</h5>
+        <hr>
+
+        <table class="table table-image">
+          <thead>
+            <tr>
+              <th scope="col">Cover</th>
+              <th scope="col">Title</th>
+              <th scope="col">Artist</th>
+              <th scope="col">Album</th>
+            </tr>
+          </thead>
+          <tbody id="musics"></tbody>
+        </table>
+        <hr>
+        <button id="clear-musics" class="btn btn-danger btn-block">Clear All Music</button>
+      </div>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="./js/ui.js"></script>
+  <script src="./js/storage.js"></script>
+  <script src="./js/music.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
